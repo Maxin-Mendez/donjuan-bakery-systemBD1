@@ -23,6 +23,12 @@ namespace FormProyecto
             this.con = con;
             this.user = user;
         }
+
+        public Menu()
+        {
+            InitializeComponent();
+        }
+
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
